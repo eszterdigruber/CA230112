@@ -51,6 +51,24 @@
                 }
                 Console.WriteLine($"{t:00}: {dbstat}db");
             }
+            Console.WriteLine("\n--------------------------------------------------------");
+            Console.WriteLine("Elem hozzáadása: +245");
+            Szam_List.Add(245);
+            Console.WriteLine($"Új lista hossza: {Szam_List.Count}");
+            Console.WriteLine("\n--------------------------------------------------------");
+            Console.WriteLine("A lista összegének kiszámolása");
+            int Osszeg = Szam_List.Sum();
+            Console.WriteLine($"A lista összege: {Osszeg}");
+            Console.WriteLine("\n--------------------------------------------------------");
+            Console.WriteLine("Maximum vagy minimum");
+            int Max = Szam_List.Max();
+            Console.WriteLine($"A legnagyobb érték a listában: {Max}");
+            int MaxHely = Szam_List.IndexOf(Max);
+            Console.WriteLine($"A listában a maximum helye: {MaxHely + 1}");
+            int Min = Szam_List.Min();
+            Console.WriteLine($"A legkisebb érték a listában: {Min}");
+            int MinHely = Szam_List.IndexOf(Min);
+            Console.WriteLine($"A listában a minimum helye: {MinHely + 1}");
         }
     }
 }
