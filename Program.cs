@@ -3,6 +3,7 @@
     class Program
     {
         static List<int> Szam_List = new List<int>();
+        static List<int> Tiszta_List = new List<int>();
         static Random rnd = new Random();
         static void Main(string[] args)
         {
@@ -28,6 +29,14 @@
                 sw.Write($"{Szam_List[i]:00}, ");
             }
             sw.Close();
+            Console.WriteLine("\n--------------------------------------------------------");
+            Console.WriteLine("Lista tisztítása");
+            foreach (var sz in Szam_List)
+            {
+                if (!Tiszta_List.Contains(sz))
+                { Tiszta_List.Add(sz); }
+            }
+            Console.WriteLine($"Tiszta lista nagysága: {Tiszta_List.Count}");
         }
     }
 }
