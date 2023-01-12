@@ -38,6 +38,17 @@
             }
             Console.WriteLine($"Tiszta lista nagysága: {Tiszta_List.Count}");
             Console.WriteLine("\n--------------------------------------------------------");
+            Console.WriteLine("Statisztika");
+            foreach (var t in Tiszta_List)
+            {
+                int dbstat = 0;
+                foreach (var sz in Szam_List)
+                {
+                    if (t == sz)
+                    { dbstat++; }
+                }
+                Console.WriteLine($"{t:00}: {dbstat}db");
+            }
         }
     }
 }
