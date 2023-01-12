@@ -20,7 +20,7 @@
                 Console.Write($"{Szam_List[i]:00}, ");
             }
             //Fajl-ba kiiratni, txt, csv UTF 8-as kódolású ami ismeri az ékezetes betűket
-            var sw = new StreamWriter(@"szamlista.txt", false, System.Text.Encoding.UTF8);
+            var sw = new StreamWriter(@"C:\Users\digruber.eszter\Documents\20230112\szamlista.txt", false, System.Text.Encoding.UTF8);
             for (int i = 0; i < Szam_List.Count; i++)
             {
                 if (i % 20 == 0)
