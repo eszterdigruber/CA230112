@@ -37,6 +37,7 @@
                 { Tiszta_List.Add(sz); }
             }
             Console.WriteLine($"Tiszta lista nagysága: {Tiszta_List.Count}");
+            Console.WriteLine("\n--------------------------------------------------------");
         }
     }
 }
