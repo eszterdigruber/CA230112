@@ -39,6 +39,8 @@
             Console.WriteLine($"Tiszta lista nagysága: {Tiszta_List.Count}");
             Console.WriteLine("\n--------------------------------------------------------");
             Console.WriteLine("Statisztika");
+            Tiszta_List.Sort();
+            Tiszta_List.Reverse();
             foreach (var t in Tiszta_List)
             {
                 int dbstat = 0;
